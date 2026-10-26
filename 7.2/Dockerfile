@@ -26,7 +26,7 @@ RUN apk add --allow-untrusted msodbcsql17_17.7.2.1-1_amd64.apk
 RUN apk add --allow-untrusted mssql-tools_17.7.1.1-1_amd64.apk
 
 # Set mssql-tools ENV variable to the PATH
-ENV PATH "$PATH:/opt/mssql-tools/bin"
+ENV PATH="$PATH:/opt/mssql-tools/bin"
 RUN echo $PATH
 
 # Remove the ODBC packages
